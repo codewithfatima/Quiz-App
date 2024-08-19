@@ -1,0 +1,218 @@
+
+/* 
+.table-header th
+{
+    color: #000000;
+    font-size: 1.1em;
+    text-align: center;
+    background: #212121;
+    padding: 18px 0;
+}
+
+
+.table-body {
+    font-size: 1.1em;
+    text-align: center;
+    color:black;
+    background: #d8d8d8;
+    padding: 18px ;
+    width: 100%;
+}
+
+.table-header > tr > td{
+    border: 1px solid #faff5a;   
+}
+
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #333;
+}
+h4{
+    font-size: 30px;
+    margin-top:-50px;
+    color: yellow;
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+     margin:15px;
+     color: #d8d8d8;
+     display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    border: 1px solid #cecece;
+    padding: 3em 4em;
+    gap: 1em;
+}
+
+*/
+
+ .bte{
+    background-color: yellow;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 25%;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+ h2{
+    font-size: 30px;
+    color: yellow;
+    margin-top: -20px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    border: 1px solid #cecece;
+    padding: 3em 4em;
+    gap: 1em;
+}
+
+.containerr .flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contents .flex span {
+    font-size: 1.4em;
+    color: #cecece;
+}
+
+.contents .flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.containerr .flex span {
+    font-size: 1.4em;
+    color: #cecece;
+}
+
+span .bold{
+    color: #0cd570;
+}
+.containerr{
+    width: 150%;
+    margin-left: -130px;
+}
+
+.containerr .flex span.achive {
+    font-weight: bold;
+    color: #ff2a66;
+    color: #2aff95;
+}
+
+.contents{
+    width: 130%;
+    margin-left: -40px;
+}
+
+.contents .flex span.achive {
+    font-weight: bold;
+    color: #ff2a66;
+    color: #2aff95;
+}
+.contents{
+    margin-top: -70%;
+}
+
+table {
+    width: 100%;
+    margin: 60px;
+    border-radius: 10px;
+}
+
+td{
+    padding-left:10px
+}
+.table-header {
+    color: #cecece;
+    font-size: 1.1em;
+    text-align: center;
+    background: #212121;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.table-body {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 20px;
+    background: #3c2e2e;
+    padding: 18px 0;
+    border: 1px solid #faff5a;  
+}
+
+.table-header > tr > td{
+    border: 1px solid #faff5a;   
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .bte {
+        width: 60%;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 992px) {
+    .bte {
+        width: 70%;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 768px) {
+    .bte {
+        width: 80%;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 576px) {
+    .bte {
+        width: 90%;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 414px) { /* Specific for iPhone 14 Pro Max and similar devices */
+    .bte {
+        width: 100%;
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    .contents .flex span,
+    .containerr .flex span {
+        font-size: 0.9em;
+    }
+    .table-header,
+    .table-body {
+        font-size: 0.9em;
+    }
+}
