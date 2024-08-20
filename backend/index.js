@@ -89,7 +89,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Serve static files from the 'client/dist' directory
-app.use(express.static(path.join(__dirname, 'client/dist')));
+app.use(express.static(path.join(__dirname, 'frontend/dist')));
 
 // Middleware
 app.use(bodyParser.json());
