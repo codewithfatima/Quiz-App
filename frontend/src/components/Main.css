@@ -78,7 +78,7 @@ input:focus {
         margin-top: -50%; 
     }
     .content{
-        margin-top: 50px;
+        margin-top: 110px;
     }
 } 
 @media (max-width: 480px) {
