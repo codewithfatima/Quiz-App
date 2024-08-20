@@ -3,6 +3,8 @@ import axios from 'axios';
 import Result from './Result';
 import './result.css'
 
+const baseurl = "https://quiz-app-3-3bf6.onrender.com"
+
 const userName = localStorage.getItem('userName');
 
 function ResultTable() {
@@ -15,7 +17,7 @@ function ResultTable() {
 
 
     useEffect(() => {
-        const apiUrl = 'https://quiz-app-2-77eh.onrender.com/results';
+        const apiUrl = 'https://localhost:5000/results';
 
         axios.get(apiUrl)
             .then(response => {
