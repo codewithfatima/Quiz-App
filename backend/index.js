@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
-import path from 'path';
+const path = require('path');
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url)
