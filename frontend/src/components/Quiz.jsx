@@ -47,9 +47,9 @@ const Quiz = () => {
     // Calculate total score based on correct answers
     const totalScore = 25; 
     const score = correctAnswers * 5; // Each correct answer is worth 5 points
-
+///quiz-app-2-77eh.onrender.com
     // Send the result to the backend
-    fetch('http://localhost:5000/saveResult', {
+    fetch('https://quiz-app-2-77eh.onrender.com/saveResult', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

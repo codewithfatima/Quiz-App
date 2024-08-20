@@ -13,6 +13,19 @@ const port = process.env.PORT ||  5000;
 app.use(bodyParser.json());
 app.use(cors());
 
+// Configure CORS to allow requests from your Netlify site
+const allowedOrigins = ['https://astounding-frangollo-531296.netlify.app'];
+
+app.use(cors({
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
+
 // MongoDB connection
 mongoose.connect(MONGO, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
