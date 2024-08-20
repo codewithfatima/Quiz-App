@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
 const path = require('path');
-const { fileURLToPath } = require('url');
+import { fileURLToPath } from 'url';
 
 
 const __filename = fileURLToPath(import.meta.url)
