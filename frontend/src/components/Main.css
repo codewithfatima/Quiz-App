@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+  
     background-color: black;
 }
 
@@ -85,19 +85,19 @@ input:focus {
 
     .userid {
         width: 70%;
-        margin-left: 1rem; /* 16px */
+        margin-left: 4rem; /* 16px */
         margin-bottom: 1.875rem; /* 30px */
     }
 
     .start {
-        width: 60%;
-        margin-left: 0.75rem; /* 12px */
+        width: 50%;
+        margin-left: 3.75rem; /* 12px */
         font-size: 0.8125rem; /* 13px */
         padding: 0.5rem; /* 8px */
     }
 
     .content {
-        margin-left: 5.3rem; /* 8px */
+        margin-left: 4.5rem; /* 8px */
         font-size: 1rem; /* 16px */
     }
 }

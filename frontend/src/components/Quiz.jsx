@@ -46,23 +46,22 @@ const Quiz = () => {
   if (quizEnded) {
     // Calculate total score based on correct answers
     const totalScore = 25; 
-    const score = correctAnswers * 5; // Each correct answer is worth 5 points
-///quiz-app-2-77eh.onrender.com
+    const score = correctAnswers * 5; 
+    
     // Send the result to the backend
-    fetch('https://quiz-app-1qt6.onrender.com/saveResult', {
+    fetch('https://quiz-app-1-f9lg.onrender.com//saveResult', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         name: userName,
-        score: score,
-        totalScore: totalScore,
-        remarks: score === 20 
-            ? 'Excellent' 
-            : score < 15 
-            ? 'Need Improvement' 
-            : 'Good effort'
+    score: score,
+    totalScore: totalScore,
+    remarks: score === 25 ? 'Excellent' :
+             score === 20 ? 'Good effort' :
+             score < 15 ? 'Better luck next time' :
+             'Need Improvement'
     }),
     
     })

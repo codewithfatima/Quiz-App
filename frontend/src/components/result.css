@@ -1,3 +1,4 @@
+
 /* 
 
  .bte{
@@ -178,10 +179,11 @@ td{
     font-size: 0.9375rem; /* 15px */
 }
 
+
 h2 {
     font-size: 1.875rem; /* 30px */
     color: yellow;
-    margin-top: -1.25rem; /* -20px */
+    margin-top: 0.1rem; /* -20px */
 }
 
 .flex-center {
@@ -189,8 +191,8 @@ h2 {
     justify-content: center;    
     flex-direction: column;
     border: 1px solid #cecece;
-    padding: 1.875rem 2.5rem; /* 3em 4em */
-    gap: 1rem; /* 1em */
+    padding:  1.1rem; /* 3em 4em */
+    gap: 1.2rem;
 }
 
 .containerr .flex {
@@ -220,6 +222,7 @@ span .bold {
 .containerr {
     width: 150%;
     margin-left: -8.125rem; /* -130px */
+    
 }
 
 .containerr .flex span.achive {
@@ -228,9 +231,9 @@ span .bold {
 }
 
 .contents {
-    width: 130%;
+    width: 150%;
     margin-left: -2.5rem; /* -40px */
-    margin-top: -52.5rem; /* -70% of 75% = -52.5rem (approx) */
+    margin-top: .2rem; /* -70% of 75% = -52.5rem (approx) */
 }
 
 .contents .flex span.achive {
@@ -267,4 +270,112 @@ td {
 
 .table-header > tr > td {
     border: 1px solid #faff5a;
+}
+
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) */
+@media (max-width: 600px) {
+    .bte {
+        width: 40%;
+        margin-left: 25%;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .containerr, .contents {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .containerr{
+        margin-left: -60px;
+    }
+
+    .contents {
+        margin-top: 0.5rem; /* Adjust based on needs */
+    }
+
+    .table-header {
+        font-size: 0.9rem; /* 14px */
+        padding: 0.9rem; /* 14px */
+    }
+
+    .table-body {
+        font-size: 0.9rem; /* 14px */
+        padding: 0.9rem 0; /* 14px 0 */
+    }
+}
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .bte {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    h2 {
+        font-size: 1.75rem; /* 28px */
+    }
+
+    .containerr, .contents {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .table-header {
+        font-size: 1rem; /* 16px */
+        padding: 1rem; /* 16px */
+    }
+
+    .table-body {
+        font-size: 1rem; /* 16px */
+        padding: 1rem 0; /* 16px 0 */
+    }
+}
+
+/* Laptops (landscape) and small desktops */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .bte {
+        width: 40%;
+        margin-left: 15%;
+    }
+
+    h2 {
+        font-size: 1.875rem; /* 30px */
+    }
+
+    .table-header {
+        font-size: 1.1rem; /* 1.1em */
+        padding: 1.1rem; /* 18px */
+    }
+
+    .table-body {
+        font-size: 1.1rem; /* 1.1em */
+        padding: 1.1rem 0; /* 18px 0 */
+    }
+}
+
+/* Desktops */
+@media (min-width: 1201px) {
+    .bte {
+        width: 30%;
+        margin-left: 25%;
+    }
+
+    h2 {
+        font-size: 1.875rem; /* 30px */
+    }
+
+    .table-header {
+        font-size: 1.1rem; /* 1.1em */
+        padding: 1.25rem; /* 20px */
+    }
+
+    .table-body {
+        font-size: 1.1rem; /* 1.1em */
+        padding: 1.125rem 0; /* 18px 0 */
+    }
 }
