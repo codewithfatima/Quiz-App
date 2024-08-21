@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import './result.css'
 const userName = localStorage.getItem('userName');
 
-const baseurl = "https://quiz-app-3-3bf6.onrender.com"
 
 const Results = () => {
     const [results, setResults] = useState([]);
@@ -14,7 +13,7 @@ const Results = () => {
     useEffect(() => {
         const fetchResults = async () => {
             try {
-                const response = await fetch('https://localhost:5000/results');
+                const response = await fetch('https://quiz-app-1qt6.onrender.com/results');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

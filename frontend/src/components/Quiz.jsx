@@ -3,8 +3,6 @@ import './Quiz.css';
 import { data } from './data'; 
 import ResultTable from './ResultTable';
 
-const baseurl = "https://quiz-app-3-3bf6.onrender.com"
-
 const userName = localStorage.getItem('userName');
 
 const Quiz = () => {
@@ -51,7 +49,7 @@ const Quiz = () => {
     const score = correctAnswers * 5; // Each correct answer is worth 5 points
 ///quiz-app-2-77eh.onrender.com
     // Send the result to the backend
-    fetch('https://localhost:5000/saveResult', {
+    fetch('https://quiz-app-1qt6.onrender.com/saveResult', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
