@@ -1,16 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
+// // vite.config.js
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
 
 // export default defineConfig({
 //   plugins: [react()],
-//   build: {
-//     outDir: 'dist' // Ensure this matches where you expect the output to be
-//   }
-// })
+//   // Other Vite configuration options
+// });
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    outDir: 'dist',
+    // Add other build options here
+  },
+  // Add other Vite configurations here
+});
