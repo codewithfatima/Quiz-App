@@ -13,7 +13,7 @@ const Results = () => {
     useEffect(() => {
         const fetchResults = async () => {
             try {
-                const response = await fetch('https://quiz-app-1-f9lg.onrender.com//results');
+                const response = await fetch('https://quiz-app-1-f9lg.onrender.com/results');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
