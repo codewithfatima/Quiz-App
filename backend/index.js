@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import 'dotenv/config';
+
 
 
 // MongoDB connection
@@ -14,7 +14,6 @@ const port = process.env.PORT ||  5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// Configure CORS to allow requests from your Netlify site
 
 // MongoDB connection
 mongoose.connect(MONGO, { useNewUrlParser: true, useUnifiedTopology: true })
