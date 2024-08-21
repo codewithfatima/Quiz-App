@@ -1,147 +1,159 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family:'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: antiquewhite;
 }
+
 body {
     height: 100vh;
-   background-color:black;
+    background-color: black;
 }
 
-.logo  {
+.logo {
     color: white;
-    font-size: 60px;
+    font-size: 3.75rem; /* 60px */
     font-weight: bolder;
-    margin-left: 40px;
+    margin-left: 2.5rem; /* 40px */
     align-items: center;
     justify-content: center;
     display: flex;
     overflow: hidden;
     cursor: none;
-    margin-top: -50px;
-    margin-bottom: -120px;
+    margin-top: -3.125rem; /* -50px */
+    margin-bottom: -7.5rem; /* -120px */
 }
 
 li {
     color: white;
     font-family: Arial, sans-serif;
-    margin-top: 10px;
-    /* align-items: center;
-    justify-content: center; */
+    margin-top: 0.625rem; /* 10px */
     display: flex;
 }
 
-.userid{
+.userid {
     width: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* 40px */
     box-sizing: border-box;
     text-align: center;
-    margin-top: 20px;
-    padding: 8px;
+    margin-top: 1.25rem; /* 20px */
+    padding: 0.5rem; /* 8px */
     color: black;
-    margin-left: 12%;
+    margin-left: 1.5rem; /* 12% approximated to rem */
     outline: none;
 }
+
 input:focus {
     outline: none;
 }
 
-.start{
+.start {
     background-color: yellow;
     width: 40%;
-    padding: 10px;
+    padding: 0.625rem; /* 10px */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     outline: none;
     text-decoration: none;
-    margin-left: 13%;
+    margin-left: 1.25rem; /* 13% approximated to rem */
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 2.5rem; /* 40px */
     font-weight: bolder;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
 }
 
-.content{
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size:  1.25rem;
-    font-weight:bold;
+.content {
+    margin-left: 0.625rem; /* 10px */
+    margin-top: 1.25rem; /* 20px */
+    font-size: 1.25rem; /* 20px */
+    font-weight: bold;
 }
 
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (up to 600px) */
+@media (max-width: 37.5rem) { /* 600px */
     .logo {
-        font-size: 40px;
-        margin-top: -50%; 
+        font-size: 2.5rem; /* 40px */
+        margin-left: 1.5rem; /* 24px */
+        margin-top: -1.875rem; /* -30px */
+        margin-bottom: -5rem; /* -80px */
     }
-    .content{
-        margin-top: 110px;
+
+    .userid {
+        width: 80%;
+        margin-left: 1rem; /* 16px */
+        margin-bottom: 1.875rem; /* 30px */
     }
-} 
-@media (max-width: 480px) {
+
+    .start {
+        width: 60%;
+        margin-left: 0.75rem; /* 12px */
+        font-size: 0.8125rem; /* 13px */
+        padding: 0.5rem; /* 8px */
+    }
+
+    .content {
+        margin-left: 0.5rem; /* 8px */
+        font-size: 1rem; /* 16px */
+    }
+}
+
+/* Tablets (600px to 768px) */
+@media (min-width: 37.5rem) and (max-width: 48rem) { /* 768px */
     .logo {
-     font-size: 50px;
-     margin-left: 50px;
+        font-size: 3rem; /* 48px */
+        margin-left: 2rem; /* 32px */
+        margin-top: -2.5rem; /* -40px */
+        margin-bottom: -6rem; /* -96px */
     }
-    .content{
-        margin-left: 30px;
-        font-size: 20px;
+
+    .userid {
+        width: 70%;
+        margin-left: 1.25rem; /* 20px */
+        margin-bottom: 2rem; /* 32px */
     }
-   
-    .userid{
-        margin-left: 45px;
+
+    .start {
+        width: 50%;
+        margin-left: 1rem; /* 16px */
+        font-size: 0.875rem; /* 14px */
+        padding: 0.5625rem; /* 9px */
     }
-    .start{
-        margin-left: 35px;
+
+    .content {
+        margin-left: 0.75rem; /* 12px */
+        font-size: 1.125rem; /* 18px */
     }
 }
 
-@media (max-width: 430px) {
+/* Large Devices (768px and up) */
+@media (min-width: 48rem) { /* 768px */
     .logo {
-     font-size: 50px;
-     margin-left: 50px;
+        font-size: 3.75rem; /* 60px */
+        margin-left: 2.5rem; /* 40px */
+        margin-top: -3.125rem; /* -50px */
+        margin-bottom: -7.5rem; /* -120px */
     }
-    .content{
-        margin-left: 30px;
-        font-size: 1.2rem;
-    }
-   
-    .userid{
-        margin-left: 45px;
-    }
-    .start{
-        margin-left: 45px;
-    }
-}
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-    .content {
-        margin: 15px; /* Adjust margin for medium screens */
-        font-size: 1.1rem; /* Slightly smaller font size */
+    .userid {
+        width: 60%;
+        margin-left: 1.5rem; /* 24px */
+        margin-bottom: 2.5rem; /* 40px */
     }
-}
 
-@media (max-width: 992px) {
-    .content {
-        margin: 10px; /* Further adjust margin for smaller screens */
-        font-size: 1rem; /* Smaller font size for smaller screens */
+    .start {
+        width: 40%;
+        margin-left: 1.25rem; /* 20px */
+        font-size: 0.9375rem; /* 15px */
+        padding: 0.625rem; /* 10px */
     }
-}
 
-@media (max-width: 768px) {
     .content {
-        margin: 5px; /* Minimal margin for mobile screens */
-        font-size: 0.9rem; /* Even smaller font size for mobile */
-    }
-}
-
-@media (max-width: 576px) {
-    .content {
-        margin: 2px; /* Minimal margin for extra-small screens */
-        font-size: 0.8rem; /* Smallest font size for extra-small screens */
+        margin-left: 1rem; /* 16px */
+        font-size: 1.25rem; /* 20px */
     }
 }
