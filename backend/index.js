@@ -12,7 +12,10 @@ const port = process.env.PORT ||  5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: 'https://quiz-app-1qt6.onrender.com' // Replace with your actual frontend URL
+}));
 
 
 // MongoDB connection
