@@ -16,7 +16,7 @@ function ResultTable() {
 
 
     useEffect(() => {
-        const apiUrl = 'https://quiz-app-1qt6.onrender.com/result';
+        const apiUrl = 'https://quiz-app-1qt6.onrender.com/results';
 
         axios.get(apiUrl)
             .then(response => {
