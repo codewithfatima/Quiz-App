@@ -49,7 +49,7 @@ const Quiz = () => {
     const score = correctAnswers * 5; 
     
     // Send the result to the backend
-    fetch('https://quiz-app-1-f9lg.onrender.com/saveResult', {
+    fetch('https://quiz-app-1qt6.onrender.com/saveResult', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
