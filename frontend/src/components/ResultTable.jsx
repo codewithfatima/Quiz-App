@@ -12,11 +12,11 @@ function ResultTable() {
     const [remarks, setRemarks] = useState('');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-    // const result = data.find(result => result.name === userName);
+  
 
 
     useEffect(() => {
-        const apiUrl = 'https://quiz-app-1-f9lg.onrender.com//results';
+        const apiUrl = 'https://quiz-app-1qt6.onrender.com/results';
 
         axios.get(apiUrl)
             .then(response => {
@@ -61,7 +61,7 @@ function ResultTable() {
             </div>
             <div className='flex' >
                 <span>Score : </span>
-                <span className='bold' style={{ color: 'green' }}>{score}</span>
+                <span className='bold' style={{ color: '#0cd570' }}>{score}</span>
             </div>
             <div className='flex'>
                 <span>Total Score :  </span>
