@@ -81,7 +81,7 @@ function ResultTable() {
         </div>
 
         <div className='containerr'>
-             <Result />
+           <Result />
             </div>
        
         </>
